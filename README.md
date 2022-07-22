@@ -1,1 +1,1 @@
-# Nomica-Bank
+# Description of the Project
