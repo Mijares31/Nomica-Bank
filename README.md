@@ -28,9 +28,13 @@ ITE Department
 Jefferson A. Costales
 # Developer
 Darwin Michael Mamangon
+
 Michael R. Mijares
+
 Ericka Jane Canda
+
 Mery Joy Nomil
+
 # Demo Video
 Click the link to watch https://youtu.be/fOqI8iV0ZRc
 # Date
