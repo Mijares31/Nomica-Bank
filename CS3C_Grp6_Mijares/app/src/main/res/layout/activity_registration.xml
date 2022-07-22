@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_intro"
+    tools:context=".RegistrationActivity">
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/myAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        android:text="0"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/txtFirstname"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:hint="Fullname"
+        android:padding="10dp"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintLeft_toLeftOf="@id/imgLogo"
+        app:layout_constraintRight_toRightOf="@id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:layout_marginTop="12dp"
+        android:hint="Email"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtFirstname"
+        app:layout_constraintStart_toStartOf="@id/txtFirstname"
+        app:layout_constraintEnd_toEndOf="@id/txtFirstname"/>
+
+
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/txtEmail"
+        app:layout_constraintRight_toRightOf="@id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail" />
+
+
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:padding="10dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/txtEmail"
+        app:layout_constraintRight_toRightOf="@id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@id/txtPassword" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/atmIcon"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:src="@mipmap/atm_round"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/txtBankrefnumber"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/txtBankrefnumber"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/txtBankrefnumber"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/txtBankrefnumber"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:hint="ATM Number"-->
+    <!--        android:inputType="numberPassword"-->
+    <!--        android:padding="10dp"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintLeft_toLeftOf="@id/txtPassword"-->
+    <!--        app:layout_constraintRight_toRightOf="@id/txtPassword"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/txtPassword" />-->
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0078AA"
+        android:text="Register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/txtPhone"
+        app:layout_constraintRight_toRightOf="@id/txtPhone"
+        app:layout_constraintTop_toBottomOf="@id/txtPhone" />
+
+    <TextView
+        android:id="@+id/mydescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? "
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintStart_toStartOf="@id/txtPhone"/>
+    <TextView
+        android:id="@+id/TV_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login now"
+        android:textStyle="bold"
+        android:textColor="#D61C4E"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintStart_toEndOf="@id/mydescription"/>
+    <ProgressBar
+        android:id="@+id/PB_Preloader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
